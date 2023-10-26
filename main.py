@@ -1,7 +1,12 @@
-print("I am here to break your code")
+def encoder(password):
+    new_password = ""
+    for i in password:
+        new_password = new_password + str(int(i) + 3)
+    return new_password
 
-i = 6
 
-
-def printMenu():
-    print("menu")
+def decoder(password):
+    new_password = ""
+    for i in password:
+        new_password = new_password + str(int(i) - 3)
+    return new_password
